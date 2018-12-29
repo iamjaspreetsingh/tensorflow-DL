@@ -80,3 +80,6 @@ with tf.Session() as sess:
     # Calculate accuracy
     accuracy = tf.reduce_mean(tf.cast(predictions, "float"))
     print("Accuracy:", accuracy.eval({x: mnist.test.images, y: mnist.test.labels}))
+
+# tensorboard --logdir=data/logs for tensorboard
+
